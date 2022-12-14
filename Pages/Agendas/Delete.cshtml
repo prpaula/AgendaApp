@@ -1,0 +1,64 @@
+﻿@page
+@model AgendaApp.Pages.Agendas.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Agenda</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.phone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.city)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.city)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.country)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.country)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.zipcode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.zipcode)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Agenda.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

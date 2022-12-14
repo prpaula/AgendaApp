@@ -1,0 +1,61 @@
+﻿@page
+@model AgendaApp.Pages.Agendas.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Agenda</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.phone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.city)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.city)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.country)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.country)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Agenda.zipcode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Agenda.zipcode)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Agenda?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

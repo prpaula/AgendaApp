@@ -1,0 +1,65 @@
+﻿@page
+@model AgendaApp.Pages.Agendas.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Agenda</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Agenda.Id" />
+            <div class="form-group">
+                <label asp-for="Agenda.name" class="control-label"></label>
+                <input asp-for="Agenda.name" class="form-control" />
+                <span asp-validation-for="Agenda.name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agenda.phone" class="control-label"></label>
+                <input asp-for="Agenda.phone" class="form-control" />
+                <span asp-validation-for="Agenda.phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agenda.email" class="control-label"></label>
+                <input asp-for="Agenda.email" class="form-control" />
+                <span asp-validation-for="Agenda.email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agenda.address" class="control-label"></label>
+                <input asp-for="Agenda.address" class="form-control" />
+                <span asp-validation-for="Agenda.address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agenda.city" class="control-label"></label>
+                <input asp-for="Agenda.city" class="form-control" />
+                <span asp-validation-for="Agenda.city" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agenda.country" class="control-label"></label>
+                <input asp-for="Agenda.country" class="form-control" />
+                <span asp-validation-for="Agenda.country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Agenda.zipcode" class="control-label"></label>
+                <input asp-for="Agenda.zipcode" class="form-control" />
+                <span asp-validation-for="Agenda.zipcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
