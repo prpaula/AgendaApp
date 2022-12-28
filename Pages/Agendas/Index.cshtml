@@ -2,10 +2,10 @@
 @model AgendaApp.Pages.Agendas.IndexModel
 
 @{
-    ViewData["Title"] = "Lista";
+    ViewData["Title"] = "Lista de Contatos";
 }
 
-<h1>Índice</h1>
+<h1>@ViewData["Title"]</h1>
 
 <p>
     <!--<a asp-page="Create">Create New</a>-->
@@ -62,12 +62,9 @@
                 @Html.DisplayFor(modelItem => item.zipcode)
             </td>
             <td>
-                        <a class="btn " asp-page="./Edit" asp-route-id="@item.Id">Edit</a>
-
-
-                   
-                       <a class="btn" asp-page="./Details" asp-route-id="@item.Id">Details</a> 
-                    <a class="btn" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    <a class="btn" asp-page="./Details" asp-route-id="@item.Id">Ver</a>
+                    <a class="btn" asp-page="./Edit" asp-route-id="@item.Id">Alterar</a>
+                    <a class="btn" asp-page="./Delete" asp-route-id="@item.Id">Eliminar Contato</a>
             </td>
         </tr>
 }
