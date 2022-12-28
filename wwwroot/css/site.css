@@ -19,6 +19,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  min-height:1000px;
 }
 .navbar-custom {
     background-color: #8b2dee;
@@ -47,5 +48,11 @@ body {
 .btn{
     background-color: #8b2dee;
     color: white;
+    
+}
+.footer {
+    background-color: #52050a !important;
+    color: white;
+    height:50px;
     
 }
