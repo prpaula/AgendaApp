@@ -2,13 +2,13 @@
 @model AgendaApp.Pages.Agendas.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes do Contato";
 }
 
-<h1>Details</h1>
+<h1>@ViewData["Title"]</h1>
 
 <div>
-    <h4>Agenda</h4>
+    <h4> </h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -56,6 +56,6 @@
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Agenda?.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
-</div>
+    <a class="btn" asp-page="./Edit" asp-route-id="@Model.Agenda?.Id">Alterar Detalhes do Contato</a> |
+    <a class="btn" asp-page="./Index">Voltar para Lista de Contatos</a>
+</div> 
