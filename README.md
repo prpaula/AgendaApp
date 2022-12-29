@@ -7,4 +7,4 @@ Devem usar o github para partilhar o projeto com os outros membros do grupo e co
 
 
 # AgendaAPP V1
-  Versão copiada (fork) da versão original, para as alterações de navegacao.
+  Versão copiada (fork) da versão original, para as alterações de navegação.
